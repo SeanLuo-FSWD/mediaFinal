@@ -5,6 +5,7 @@ body {
   margin: auto;
   border-right: 2px solid #33b32b;
   border-left: 2px solid #33b32b;
+  height: 100vw;
 }
 .flex {
   display: flex;

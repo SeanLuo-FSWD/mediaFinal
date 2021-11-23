@@ -47,17 +47,70 @@
     </div>
     <div class="main">
       <div class="flex project_nav">
-        <p><a href="./1.html" class="project_nav_item">Social Network</a></p>
-        <p><a href="" class="project_nav_item">Roomates</a></p>
-        <p><a href="" class="project_nav_item">School</a></p>
-        <p><a href="" class="project_nav_item">Movies</a></p>
-        <p><a href="" class="project_nav_item">Invoices</a></p>
+        <p
+          class="project_nav_item selected"
+          onclick="onProjectSelect(event, 'social_network')"
+        >
+          Network
+        </p>
+        <p
+          class="project_nav_item"
+          onclick="onProjectSelect(event, 'Roomates')"
+        >
+          Roomates
+        </p>
+        <p class="project_nav_item" onclick="onProjectSelect(event, 'School')">
+          School
+        </p>
+        <p class="project_nav_item" onclick="onProjectSelect(event, 'Movies')">
+          Movies
+        </p>
+        <p
+          class="project_nav_item"
+          onclick="onProjectSelect(event, 'Invoices')"
+        >
+          Invoices
+        </p>
       </div>
 
       <div class="content_area">
-        <h2>Please select project above to view details</h2>
+        <div id="social_network" class="project_item item_active">
+          <h2>Social Network</h2>
+          <h3>Description</h3>
+          <p>Description text</p>
+          <h3>Tools</h3>
+          <p>Tool text</p>
+          <h3>My contribution</h3>
+          <p>contribution text</p>
+          <h3>Links</h3>
+          <p>Github:</p>
+          <h3>Screenshots</h3>
+          <div class="flex"></div>
+        </div>
+        <div id="Roomates" class="project_item">Roomates</div>
+        <div id="School" class="project_item">School</div>
+        <div id="Movies" class="project_item">Movies</div>
+        <div id="Invoices" class="project_item">Invoices</div>
       </div>
     </div>
   </body>
   <script src="../main.js"></script>
+  <script>
+    function onProjectSelect(e, id) {
+      // color the buttons
+      let all_nav = document.querySelectorAll(".project_nav_item");
+      all_nav.forEach((item) => {
+        item.classList.remove("selected");
+      });
+      e.target.classList.add("selected");
+
+      // show/hide content
+      let all_items = document.querySelectorAll(".project_item");
+      all_items.forEach((item) => {
+        item.classList.remove("item_active");
+      });
+
+      document.getElementById(id).classList.add("item_active");
+    }
+  </script>
 </html>

@@ -12,3 +12,23 @@
   color: #33b32b;
   border: #33b32b solid 2px;
 }
+
+.project_nav_item.selected {
+  color: #33b32b;
+  font-weight: bold;
+  border-color: white;
+  background-color: white;
+}
+
+.project_item {
+  display: none;
+}
+
+.project_item h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.project_item.item_active {
+  display: block;
+}

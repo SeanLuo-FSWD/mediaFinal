@@ -2,7 +2,13 @@
 let url = window.location.pathname;
 let path_arr = url.split("/");
 
+console.log("000000000000000000000");
+console.log(path_arr);
+
 let pagePath = path_arr[path_arr.length - 1].slice(0, -5);
+
+console.log("1111111111111111111111");
+console.log(pagePath);
 
 let subItem = document.getElementById(pagePath);
 
