@@ -1,0 +1,69 @@
+.fswd {
+  font-size: 2em;
+}
+
+.coursesWrap {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.courses {
+  font-size: 1.5em;
+}
+
+.courseList {
+  width: 0;
+  margin-top: 20px;
+  display: grid;
+  grid-template:
+    "i1 i2 i3" 1fr
+    "i8 ic i4" 1fr
+    "i7 i6 i5" 1fr /
+    1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.courseItem {
+  margin: 10px;
+  padding: 20px;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 5px solid #33b32b; */
+  border-radius: 50%;
+  background-color: #33b32b;
+  text-align: center;
+}
+
+.i1 {
+  grid-area: i1;
+}
+.i2 {
+  grid-area: i2;
+}
+.i3 {
+  grid-area: i3;
+}
+.i4 {
+  grid-area: i4;
+}
+.i5 {
+  grid-area: i5;
+}
+.i6 {
+  grid-area: i6;
+}
+.i7 {
+  grid-area: i7;
+}
+.i8 {
+  grid-area: i8;
+}
+.ic {
+  grid-area: ic;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+}

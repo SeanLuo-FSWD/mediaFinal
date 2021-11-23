@@ -1,0 +1,14 @@
+.content_area {
+  margin-top: 50px;
+}
+
+.project_nav {
+  justify-content: space-between;
+}
+
+.project_nav_item {
+  padding: 10px;
+  border-radius: 10px;
+  color: #33b32b;
+  border: #33b32b solid 2px;
+}
